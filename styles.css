@@ -1,0 +1,269 @@
+.content {
+  text-align: center;
+  color:#967e4c;
+  max-width: 500px;
+  margin-bottom: 20vh;
+}
+@font-face {
+  font-family: "Bowlby One SC";
+  src: url("fonts/BowlbyOneSC-Regular.ttf") format("truetype");
+}
+
+
+h1 {
+  font-family: "Bowlby One SC", Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+}
+.navlist{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:#967e4c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+
+li a:hover {
+  border-bottom: 3px solid #967e4c; 
+  
+}
+.logo 
+{
+  position: relative;
+  width: 189px;
+  height: 55px;
+}
+.navlist ul
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+header{
+  display: flex;
+}
+.contact-info {
+  position: relative;
+  top: 0px;
+  right: 10px;
+  padding: 12px 10px;
+  background-color: #000000;
+  color:#967e4c;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  white-space: nowrap;
+}
+
+#hamburger{
+  display: none;
+}
+
+/* Mobile Phone */
+@media only screen and (max-width: 468px) {
+  .navlist ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  body {
+    background-color: white; 
+    margin: 0; 
+  }
+  .navlist {
+    position: absolute;
+    top: 0;
+    margin-top: 3.4em;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    background: #000000;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: left 0.3s ease-in;
+  }
+
+  li a:hover {
+    border-bottom: 3px solid #967e4c; 
+    
+  }
+    
+  .contact-info {
+    display: none;
+  }
+ .navlist.closed{
+    left: -100%;
+    top: -50%;
+   transition: left 0.3s ease-in;
+    
+  }
+
+#hamburger {
+  display: block;
+  margin-top: 0px; 
+  padding-left: 225px;
+  cursor: pointer;
+  
+ 
+}
+header{
+  background-color: black;
+  display: flex;
+  height: 150;
+}
+li {
+  float: none;
+  width: 100%;
+    margin-right: 6px;
+
+}
+}
+/* Tablets */
+@media only screen and (max-width: 768px) {
+  .navlist {
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    float: none;
+}
+
+
+
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+main h1{
+  color: #967e4c;
+  justify-content: center;
+}
+
+ 
+  .contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.contactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+
+.contact {
+    padding: 40px;
+    background: #967e4c;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.15);
+}
+
+
+.box {
+    position: relative;
+    display: flex; /* Change the display to flex */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: 20px;
+}
+.contact h3 {
+    color: black;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+.inputBox span {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1m;
+    outline: none;
+    border: 1px solid black;
+}
+
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1m;
+    outline: none;
+    border: 1px solid black;
+   
+    min-height: 220px;
+}
+
+.inputBox input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+  
+    max-width: 120px;
+    font-weight: 500
+    
+}
+.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
+
+
