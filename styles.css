@@ -1,3 +1,24 @@
+body {
+  background-image: url('Images/Background\ picture.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+ 
+
+.vertical-line
+{
+  border-left: 5px solid #f8d407;
+  height: 35vh;
+  position: absolute;
+  left: 20%;
+  justify-content: center;
+  top: 28%;
+}
+
 .content {
   text-align: center;
   color:#967e4c;
