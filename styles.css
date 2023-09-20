@@ -1,0 +1,372 @@
+/*Fonts*/
+@font-face {
+  font-family: Archivo-Bold;
+  src: url('fonts/Archivo-Bold.ttf');
+}
+
+@font-face {
+  font-family: Archivo-Regular;
+  src: url('fonts/Archivo-Regular.ttf');
+}
+  
+@font-face {
+  font-family: Archivo-Black;
+  src: url('fonts/Archivo-Black.ttf');
+}
+
+@font-face {
+  font-family: Archivo-LightItalic;
+  src: url('fonts/Archivo-LightItalic.ttf');
+}
+@font-face {
+  font-family: Sanchez-Regular;
+  src: url('fonts/Sanchez-Regular.ttf');
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.vertical-line
+{
+  border-left: 5px solid #f8d407;
+  height: 35vh;
+  position: absolute;
+  left: 20%;
+  justify-content: center;
+  top: 28%;
+}
+
+main {
+  background-image: url('Images/Backgroundpicture.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+}
+
+.content {
+  text-align: center;
+  color: white;
+  height: 50vh;
+}
+
+.content h1{
+  font-family: Archivo-Black;
+}
+
+.content h2{
+  font-family: Archivo-Regular;
+  font-style: italic;
+}
+
+.header-list{
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+}
+.navlist{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  font-family: Archivo-Bold;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+
+/*li a:hover {
+  border-bottom: 3px solid #967e4c; }*/
+  
+li a:hover {
+  border: 1px solid yellow; 
+  padding: 12px 14px; 
+}
+
+li a.active {
+  border: 1px solid yellow; 
+  padding: 12px 14px; 
+}
+
+.logo 
+{
+  position: relative;
+  width: 280px;
+  height: 55px;
+}
+.navlist ul
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+header{
+    background-color: black;
+    display: flex;
+    height: 60px;
+  }
+  
+  .contact-info {
+    position: relative;
+    top: 0px;
+    right: 10px;
+    padding: 12px 10px;
+    background-color: #000000;
+    color:white;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    white-space: nowrap;
+    
+  }
+
+#hamburger{
+  display: none;
+}
+
+/* What we do*/
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  width: 50%;
+  background-color:black;
+  color: white;
+}
+
+
+.what-we-do-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stock-image {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* Mission & Vision*/
+.mission-container {
+  position: relative;
+  height: 100vh;
+  background-image: url('/Images/Mission&VisionBg.png');
+
+}
+
+.mission-box,
+.vision-box {
+  width: 350px;
+  height: 150px;
+  padding: 10px;
+  position: absolute;
+  border: 2px solid #7c6e2f93; 
+  border-radius: 5px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+.mission-box:hover,
+.vision-box:hover {
+       transform: scale(1.05); 
+       transition: transform 0.3s; 
+       z-index: 1;
+}
+
+.mission-box {
+  background-color: #DFC01B;
+  color: black;
+  bottom: 0;
+  left: 25%;
+  top: 50%;
+}
+
+.mission-box h2 {
+  font-weight: bolder;
+  text-align: center;
+  
+}
+
+.vision-box {
+  background-color: #97663A;
+  color: black;
+  top: 30%;
+  right: 23%;
+}
+
+.vision-box h2 {
+  font-weight: bolder;
+  text-align: center;
+  
+}
+
+/* Our Products*/
+.product-body{
+  background-color: #97663A;
+  padding: 10px;
+  font-family: anchez-Regular;
+  
+}
+
+.products-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card {
+  flex: 1;
+  border: 0px solid black;
+  padding: 1px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  transition: transform 0.3s;
+}
+  
+.product-card:hover {
+transform: scale(1.05);
+}
+
+.product-description {
+  flex-grow: 1;
+  padding: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+.product-1 {
+  background-color: #DFC01B;
+
+}
+
+.product-2 {
+  background-color: #000;
+  color: white;
+}
+
+.product-3 {
+  background-color: #DFC01B;
+}
+
+.view-more-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #DFC01B;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/*Contanct Us*/
+
+.contactUs-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+.inquire-btn {
+  border: none;
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #DFC01B;
+  color: white;
+  
+}
+
+/*Footer*/
+
+footer {
+  background-color: #DFC01B;
+  color: #0c0c09;
+  text-align: center;
+  padding: 10px 20px;
+
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-logo{
+  position: relative;
+  width: 280px;
+  height: 55px;
+
+}
+
+.separator {
+  border: 1px solid #000;
+  margin: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 20px;
+  color: black !important;
+
+}
+
+.contact-details{
+  display: flex;
+}
+
+.copyright {
+  margin-top: auto;
+}
+
+
