@@ -312,6 +312,32 @@ transform: scale(1.05);
   color: white;
   
 }
+/* About us*/
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  width: 50%;
+  background-color:black;
+  color: white;
+}
+
+
+.about-description {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.Pindiwe-image {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*Footer*/
 
