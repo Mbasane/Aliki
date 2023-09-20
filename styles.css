@@ -170,6 +170,23 @@ img {
   height: 100%;
 }
 
+/*About Us*/
+.aboutUs-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.about{
+  width: 50%;
+  background-color:black;
+  color: white;
+}
+.Pindiwe-image {
+  width: 50%;
+}
+
+
+
 /* Mission & Vision*/
 .mission-container {
   position: relative;
@@ -226,9 +243,9 @@ img {
 
 /* Our Products*/
 .product-body{
-  background-color: #97663A;
+  background-color: #885f36;
   padding: 10px;
-  font-family: anchez-Regular;
+  font-family: Sanchez-Regular;
   
 }
 
