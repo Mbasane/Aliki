@@ -80,6 +80,7 @@ main {
   flex-direction: row;
   width: 100%;
   font-family: Archivo-Bold;
+  align-items: center;
 }
 
 li {
@@ -178,6 +179,7 @@ img {
 
 }
 
+
 .mission-box,
 .vision-box {
   width: 350px;
@@ -210,6 +212,7 @@ img {
   text-align: center;
   
 }
+
 
 .vision-box {
   background-color: #97663A;
