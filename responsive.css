@@ -67,5 +67,20 @@
     }
     li {
       float: none;
-  }
+    }
+    .missionvisionitem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-direction:column;
+     padding:.5em;
+    }
+    .row .product-card {
+      margin:1em;
+    }
   }
