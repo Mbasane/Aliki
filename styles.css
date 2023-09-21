@@ -316,14 +316,23 @@ transform: scale(1.05);
 
 /*Contanct Us*/
 .contact-body{
-  background-image: url('/Images/Contact_bg.jpg'); 
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+width: 100%;  
+height: 50vh;
+padding: 5em auto ;
+} 
+.backImage {
+position: absolute;
+ z-index: -1;
 }
 .contactUs-container {
   color: white;
   text-align: center;
-  padding: 100px;
+  position: relative;
+  z-index: 1;
+  margin: 5em auto;
+
 }
 h1 {
   font-size: 48px;
