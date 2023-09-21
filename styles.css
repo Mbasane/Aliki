@@ -315,19 +315,30 @@ transform: scale(1.05);
 }
 
 /*Contanct Us*/
-
+.contact-body{
+  background-image: url('/Images/Contact_bg.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .contactUs-container {
-  font-family: Arial, sans-serif;
+  color: white;
   text-align: center;
-  margin: 50px;
+  padding: 100px;
+}
+h1 {
+  font-size: 48px;
 }
 .inquire-btn {
-  border: none;
-  font-size: 1em;
+  margin-top: 20px;
   padding: 10px 20px;
+  font-size: 18px;
   background-color: #DFC01B;
-  color: white;
-  
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.inquire-text {
+  font-size: 18px;
 }
 
 /*Footer*/
