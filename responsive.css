@@ -1,6 +1,9 @@
 /* Mobile Phone */
-@media only screen and (max-width: 468px) {
-    .navlist ul {
+@media only screen and (max-width: 768px) {
+  main {
+    height: 80vh; 
+  }
+  .navlist ul {
       flex-direction: column;
       align-items: center;
     }
@@ -42,7 +45,7 @@
   #hamburger {
     display: block;
     margin-top: 0px; 
-    padding-left: 225px;
+    padding-left: auto;
     cursor: pointer;
   }
   
@@ -65,15 +68,78 @@
       flex-direction: column;
       align-items: center;
     }
+    .content {
+      text-align: center;
+      color: white;
+      height: fit-content;
+      margin: 1.5em;
+      padding:1em;
+      width: 70%;
+      border-left:  3px solid #f8d407;
+    }
+    
+    .content h1{
+      font-family: Archivo-Black;
+      font-size: 2.5em;
+    }
+    
+    .content h2{
+      font-family: Archivo-Regular;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1.9em;
+    }
+    .container {
+      position: relative;;
+    }
+    .description {
+      width: 100%;
+      background-color:rgba(0, 0, 0, 0.785);
+      color: white;
+      position: relative;
+      z-index: 1;
+      padding: 2em;
+      backdrop-filter: blur(2px);
+    }
+    
+    .stock-image {
+      z-index: 0;
+      position:absolute;
+      width: 100%;
+    }
     li {
       float: none;
     }
+    .mission-container {
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+   
     .missionvisionitem {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     }
+    .mission-box {
+      background-color: #DFC01B;
+      color: black;
+      bottom: 0;
+      left: auto;
+      right:auto;
+      top: 55%;
+    }
+    
+  
+    
+    .vision-box {
+      background-color: #97663A;
+      color: black;
+      top: 35%;
+      right: auto;
+    }
+    
     .row {
       display: flex;
       justify-content: center;
@@ -82,5 +148,37 @@
     }
     .row .product-card {
       margin:1em;
+    }
+    .info-link {
+      width: 100%;
+    }
+    .footer-info {
+      font-size: .9em;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content:stretch;
+      align-items: stretch;
+    }
+    ._container {
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      width: 100%;
+    }
+    .Pindiwe-image {
+      width: 100%;
+      display: flex;
+      padding: .5em; 
+      background-color: #000;
+      
+    }
+    .Pindiwe-image img {
+      max-width: 50%;
+      width: auto;
+      margin: auto;
+      padding:3em;
+      height: 100%;
+      border-radius: 50%;
     }
   }
