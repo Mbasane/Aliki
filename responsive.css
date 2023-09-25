@@ -52,7 +52,7 @@
   header{
     background-color: black;
     display: flex;
-    height: 150;
+    justify-content: space-between;
   }
   
   li {
