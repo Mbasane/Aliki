@@ -24,7 +24,7 @@
       background: #000000;
       font-family: Arial, sans-serif;
       font-weight: bold;
-      transition: left 0.3s ease-in;
+      transition: all .5s ease-in;
     }
   
     li a:hover {
@@ -36,9 +36,8 @@
       display: none;
     }
    .navlist.closed{
-      left: -100%;
-      top: -50%;
-     transition: left 0.3s ease-in;
+      left: -150%;
+     transition: all .4s ease-in;
       
     }
   
@@ -47,6 +46,7 @@
     margin-top: 0px; 
     padding-left: auto;
     cursor: pointer;
+    padding:1.5em 1em;
   }
   
   header{
@@ -181,4 +181,20 @@
       height: 100%;
       border-radius: 50%;
     }
+    .about {
+     justify-content: center;
+    }
+    .about h2,.about a {
+      text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+  .header-list {
+    justify-content: center;
+    }
+
+  .header-list li {
+    padding:.5em 2em;
+  }
   }
