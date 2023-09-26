@@ -23,12 +23,17 @@
   src: url('fonts/Sanchez-Regular.ttf');
 }
 
-
+:root {
+  margin: 0;
+  padding:0 ;
+  display: block;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  
+  overflow-x:hidden;
 }
 
 .vertical-line
@@ -55,16 +60,23 @@ main {
 .content {
   text-align: center;
   color: white;
-  height: 50vh;
+  height: fit-content;
+  margin: 1.5em;
+  padding:2em;
+  width: 60%;
+  border-left:  3px solid #f8d407;
 }
 
 .content h1{
   font-family: Archivo-Black;
+  font-size: 3em;
+  line-height: 1em;
 }
 
 .content h2{
   font-family: Archivo-Regular;
   font-style: italic;
+  font-size: 1.5em;
 }
 
 .header-list{
@@ -73,14 +85,15 @@ main {
   overflow: hidden;
   background-color: #000000;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  
+
 }
 .navlist{
   display:flex;
   flex-direction: row;
   width: 100%;
   font-family: Archivo-Bold;
-  align-items: center;
 }
 
 li {
@@ -91,7 +104,8 @@ li a {
   display: block;
   color:white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0;
+  width: 100%;
   text-decoration: none
 }
 
@@ -124,6 +138,7 @@ header{
     background-color: black;
     display: flex;
     height: 60px;
+    align-items: center;
   }
   
   .contact-info {
@@ -148,22 +163,33 @@ header{
 .container {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  font-family: Archivo-Regular;
 }
 
 .description {
-  width: 50%;
+  width: 100%;
   background-color:black;
   color: white;
+  position: relative;
+  font-size: 1.5em;
 }
 
+.what-we-do-list {
+  margin: 0;
+  font-size: 16px;
+}
 
 .what-we-do-list li {
   font-size: 18px;
   margin-bottom: 10px;
+
 }
 
 .stock-image {
-  width: 50%;
+  position: relative;
+  width: 100%;
 }
 
 img {
@@ -171,20 +197,42 @@ img {
   height: 100%;
 }
 
-/* Mission & Vision*/
-.mission-container {
-  position: relative;
-  height: 100vh;
-  background-image: url('/Images/Mission&VisionBg.png');
+/*About Us*/
+.aboutUs-container{
+  display: flex;
+  justify-content: space-between;
 
+}
+.about{
+  width: 50%;
+  background-color:black;
+  color: white;
+}
+.Pindiwe-image {
+  width: 50%;
 }
 
 
+
+/* Mission & Vision*/
+.mission-container {
+  position: relative;
+
+  display: flex;
+  width: 100%;
+}
+
+.misssion-container img { 
+  width: 100% !important;
+  height: auto;
+  position: relative;
+  object-fit:fill;
+}
 .mission-box,
 .vision-box {
-  width: 350px;
+  width: 50%;
   height: 150px;
-  padding: 10px;
+  padding: 1.5em;
   position: absolute;
   border: 2px solid #7c6e2f93; 
   border-radius: 5px; 
@@ -203,8 +251,8 @@ img {
   background-color: #DFC01B;
   color: black;
   bottom: 0;
-  left: 25%;
-  top: 50%;
+  left: 5%;
+  top: 55%;
 }
 
 .mission-box h2 {
@@ -213,12 +261,11 @@ img {
   
 }
 
-
 .vision-box {
   background-color: #97663A;
   color: black;
-  top: 30%;
-  right: 23%;
+  top: 35%;
+  right: 5%;
 }
 
 .vision-box h2 {
@@ -226,12 +273,11 @@ img {
   text-align: center;
   
 }
-
 /* Our Products*/
 .product-body{
-  background-color: #97663A;
-  padding: 10px;
-  font-family: anchez-Regular;
+  background-color: #885f36;
+  padding: 20px;
+  font-family: Sanchez-Regular;
   
 }
 
@@ -239,19 +285,20 @@ img {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  
+
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .product-card {
   flex: 1;
   border: 0px solid black;
   padding: 1px;
-  margin: 10px;
+  margin: .5em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -301,19 +348,93 @@ transform: scale(1.05);
 }
 
 /*Contanct Us*/
-
+.contact-body{
+  background-image: url('/Images/Contact_bg.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+  width: 100%;  
+  padding: 5em auto ;
+} 
+.backImage {
+position: absolute;
+ z-index: -1;
+}
 .contactUs-container {
-  font-family: Arial, sans-serif;
+  color: white;
   text-align: center;
-  margin: 50px;
+  position: relative;
+  z-index: 1;
+  margin: 5em auto;
+
+}
+.contactUs-container h1 {
+  font-size: 48px;
+  margin-top: 20px;
 }
 .inquire-btn {
-  border: none;
-  font-size: 1em;
   padding: 10px 20px;
+  font-size: 18px;
   background-color: #DFC01B;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.inquire-btn a {
+  text-decoration: none;
   color: white;
-  
+}
+.inquire-text {
+  font-size: 18px;
+  margin-top: 40px;
+}
+/* About us*/
+._container {
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  flex-direction: row;
+}
+.about {
+  width: 100%;
+  background-color:black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding:3em .5em ;
+}
+
+.about button {
+  padding: 1em;
+  margin:0 .5em;
+  background-color: #DFC01B;
+  border: 1px solid #f8d407;
+  width: fit-content;
+}
+.about h2 {
+  margin:0 .5em; 
+}
+
+.about-description {
+  font-size: 18px;
+  padding:.5em ;
+
+}
+
+.Pindiwe-image {
+  width: 100%;
+  display: flex;
+  padding: 3em; 
+  background-color: #000;
+  border-radius: 0;
+}
+
+.Pindiwe-image img {
+  max-width: 100%;
+  width: auto;
+  margin: 0 0 0 auto;
+  height: 100%;
 }
 
 /*Footer*/
@@ -322,15 +443,30 @@ footer {
   background-color: #DFC01B;
   color: #0c0c09;
   text-align: center;
-  padding: 10px 20px;
-
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding:.2em 0;
 }
 
-.top-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+footer hr {
+  border: .5px solid black;
+  width: 100%;
+}
+
+.footer-info {
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ justify-content:space-evenly;
+ align-items: stretch;
 }
 
 .footer-logo{
@@ -340,27 +476,32 @@ footer {
 
 }
 
+.address{
+  padding: 0px;
+}
 .separator {
   border: 1px solid #000;
   margin: 10px 0;
 }
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.info-link {
+  width: 50%;
 }
 
 .footer-links {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
+
 
 .footer-links li {
   display: inline;
-  margin-right: 20px;
+  padding: 1em .2em;
   color: black !important;
+  width: 100%;
 
 }
 
