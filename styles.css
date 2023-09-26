@@ -245,19 +245,18 @@ img {
   color: black;
   bottom: 0;
   left: 5%;
-  top: 55%;
+  top: 45%;
 }
 
 .mission-box h2 {
   font-weight: bolder;
   text-align: center;
-  
 }
 
 .vision-box {
   background-color: #97663A;
   color: black;
-  top: 35%;
+  top: 15%;
   right: 5%;
 }
 
