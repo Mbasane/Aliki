@@ -276,7 +276,7 @@ img {
 /* Our Products*/
 .product-body{
   background-color: #885f36;
-  padding: 10px;
+  padding: 20px;
   font-family: Sanchez-Regular;
   
 }
@@ -380,6 +380,10 @@ position: absolute;
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+.inquire-btn a {
+  text-decoration: none;
+  color: white;
 }
 .inquire-text {
   font-size: 18px;
