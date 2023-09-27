@@ -402,7 +402,8 @@ position: absolute;
   color: white;
   display: flex;
   flex-direction: column;
-  padding:3em .5em ;
+  padding:5em .5em ;
+  height: 85vh;
 }
 
 .about button {
