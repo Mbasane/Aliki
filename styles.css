@@ -194,6 +194,7 @@ header{
 
 img {
   max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -208,23 +209,19 @@ img {
   background-color:black;
   color: white;
 }
-.Pindiwe-image {
-  width: 50%;
-}
 
 
 
 /* Mission & Vision*/
 .mission-container {
   position: relative;
-
   display: flex;
   width: 100%;
 }
 
 .misssion-container img { 
   width: 100% !important;
-  height: auto;
+  height: 100%;
   position: relative;
   object-fit:fill;
 }
@@ -236,6 +233,7 @@ img {
   position: absolute;
   border: 2px solid #7c6e2f93; 
   border-radius: 5px; 
+  margin: auto 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   
 }
@@ -252,7 +250,7 @@ img {
   color: black;
   bottom: 0;
   left: 5%;
-  top: 55%;
+  top: 10rem;
 }
 
 .mission-box h2 {
@@ -264,7 +262,7 @@ img {
 .vision-box {
   background-color: #97663A;
   color: black;
-  top: 35%;
+  margin-top: 12%;
   right: 5%;
 }
 
@@ -282,10 +280,9 @@ img {
 }
 
 .products-container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
-
 }
 
 .row {
@@ -297,8 +294,7 @@ img {
 .product-card {
   flex: 1;
   border: 0px solid black;
-  padding: 1px;
-  margin: .5em;
+  margin: .5em 1.5em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -314,7 +310,7 @@ transform: scale(1.05);
 
 .product-description {
   flex-grow: 1;
-  padding: 10px;
+  padding: 1.5em;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -402,7 +398,7 @@ position: absolute;
   color: white;
   display: flex;
   flex-direction: column;
-  padding:5em .5em ;
+  justify-content: center;
   height: 85vh;
 }
 
@@ -436,6 +432,7 @@ position: absolute;
   width: auto;
   margin: 0 0 0 auto;
   height: 100%;
+  object-fit: contain;
 }
 
 /*Footer*/
