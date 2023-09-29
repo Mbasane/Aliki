@@ -12,7 +12,7 @@
       margin: 0; 
     }
     .navlist {
-      position: absolute;
+      position: fixed;
       top: 0;
       margin-top: 3.4em;
       left: 0;
@@ -26,6 +26,7 @@
       font-weight: bold;
       transition: all .5s ease-in;
       z-index:10;
+     
     }
   
     li a:hover {
@@ -54,6 +55,9 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width:100% ;
+    z-index: 10;
   }
   
   li {
