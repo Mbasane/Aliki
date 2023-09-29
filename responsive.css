@@ -25,6 +25,7 @@
       font-family: Arial, sans-serif;
       font-weight: bold;
       transition: all .5s ease-in;
+      z-index:10;
     }
   
     li a:hover {
@@ -113,7 +114,7 @@
     .mission-container {
       align-items: center;
       justify-content: center;
-      height: 100vh;
+     
     }
    
     .missionvisionitem {
@@ -130,10 +131,18 @@
       top: 50%;
       padding:2em;
     }
+<<<<<<< HEAD
     .vision-box {
       background-color: #97663A;
       color: black;
       top: 20%;
+=======
+    
+    .vision-box {
+      background-color: #97663A;
+      color: black;
+      top: 25%;
+>>>>>>> ad5e96ea4d695da6ec699679c07970d807b941e0
       right: auto;
     }
     .row {
@@ -143,7 +152,8 @@
       padding:.5em;
     }
     .row .product-card {
-      margin:1em;
+      margin:1em auto;
+      max-width: 450px;
     }
     .info-link {
       width: 100%;
@@ -179,6 +189,9 @@
     }
     .about {
      justify-content: center;
+     padding: 6em 0;
+     height: fit-content;
+     text-align: center;
     }
     .about h2,.about a {
       text-align: center;
