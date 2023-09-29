@@ -2,157 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #97663A;
-        }
-        .products-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .product-card {
-            flex: 1;
-            border: 0px solid black;
-            padding: 1px;
-            margin: 10px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: black;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
-            transition: transform 0.3s;
-        }
-            
-
-    
-        .product-card:hover {
-        transform: scale(1.05);
-       }
-
-        .product-description {
-            flex-grow: 1;
-            padding: 10px;
-            margin-bottom: 0;
-            margin-top: 0;
-        }
-
-        .product-card img {
-            max-width: 100%;
-        }
-    
-        .product-1 {
-            background-color: #DFC01B;
-
-        }
-
-        .product-2 {
-            background-color: #000;
-            color: white;
-        }
-
-        .product-3 {
-            background-color: #DFC01B;
-        }
-
-        .view-more-btn {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #DFC01B;
-            color: black;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akili Timber</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head> 
 <body>
-    <header>
-        <img src="Images/Logo.jpeg" alt="Akili Timber Logo" class="logo">
-        <div id ="hamburger" onClick= "hamburger_menu()">
-          <svg width="35" height="48" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_i_0_1)">
-            <rect x="1" y="1" width="34" height="36" rx="6" fill="#D8D1C4"/>
-            </g>
-            <rect x="0.5" y="0.5" width="35" height="37" rx="6.5" stroke="black"/>
-            <rect x="7" y="8" width="21" height="6" fill="#967E4C"/>
-            <rect x="7" y="16" width="21" height="7" fill="#967E4C"/>
-            <rect x="7" y="25" width="21" height="6" fill="#967E4C"/>
-            <defs>
-            <filter id="filter0_i_0_1" x="0" y="0" width="36" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset dy="4"/>
-            <feGaussianBlur stdDeviation="2"/>
-            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
-            </filter>
-            </defs>
-            </svg>
-        
-        </div>  
-    <div id = "navlisID" class= "navlist closed"> 
-           <ul class="header-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Product</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+  <header>
+    <img src="Images/Logo.jpeg" alt="Akili Timber Logo" class="logo">
+    <div id ="hamburger" onClick= "hamburger_menu()">
+      <svg width="35" height="48" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_i_0_1)">
+        <rect x="1" y="1" width="34" height="36" rx="6" fill="#D8D1C4"/>
+        </g>
+        <rect x="0.5" y="0.5" width="35" height="37" rx="6.5" stroke="black"/>
+        <rect x="7" y="8" width="21" height="6" fill="#967E4C"/>
+        <rect x="7" y="16" width="21" height="7" fill="#967E4C"/>
+        <rect x="7" y="25" width="21" height="6" fill="#967E4C"/>
+        <defs>
+        <filter id="filter0_i_0_1" x="0" y="0" width="36" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        </filter>
+        </defs>
+        </svg>
     
-        <div class="contact-info">
-        <svg width="25" height="19" viewBox="0 0 309 297" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <rect width="308.423" height="297" fill="url(#pattern0)"/>
-    <defs>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-    <use xlink:href="#image0_182_2" transform="matrix(0.0208333 0 0 0.0216346 0 -0.0192307)"/>
-    </pattern>
-    <image id="image0_182_2" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQ0lEQVR4nO2Zu4sUQRCHy/cTlANBBU18hmJiYngXGBmZ+ozFP+G48EAxFEQQY1ER7wTByEegoIZ6Ii6sLuvM9O/XM+sJPtCS5lY5ZG9mZ1x26mA/qGzZqa+7q6e6R2TEiBGV8d5vJXkKwB2SHwAQwO0kSQ6IZVR1Hclpkh2S2iPmvfeHxSJRFG0G8GiJxP8GgFequlKsQfJqUfKLJI6JJeI43g/gV78CJGfFEiQnSyQfZuBnmqZ7xQokZ8oIdOOSWAHA+woCr8UKJLMKAp/FCgC+lxUA8FasQPJLBYEpsQLJZsnkXzYajfViBZLPSiT/otPpbBNLkLzWp8DzNE3HxBokL/Qx8g/b7fYmsYj3/lBB8j9MjvwfVHUFyU85At+azeYGsQyA63mz4JybEMs45yYK6mBaLKOqq0i2cgSaqrpWLANgqmAZnRXLRFG0PRRsjsScqq4WywC4UVALk2KZLMv2hX0/753gnDsiy3kWALxLkmSnWCVN0z0FtRDiTRzHO3pciJ3sDsADkhdJ7q5FovvwouZuDsCJsDsBuAfga4/fzJM8WofAFgBRmXNCzpJz/87WUPDenx6EABdiRuqA5P1BSTjnzg1dAMAukumAJLLwf0OXIHm85NWj5tTDZamD8OABCTRqEVDVNQOqh0zqotVqbST59D8FnkiddN+2j6sKeO/PSN2E8zGAWxUEboqxi4DzS7QP2qN475o80YXGL4xswTZ7xWTyi0mS5GBoAMNHQC40cB/DMnPOjded24gRsgz5DT2ix65nYvgAAAAAAElFTkSuQmCC"/>
-    </defs>
-    </svg>
-        +27 84 532 5147
-      </div>
-        
-      </header>
-    <div class="products-container">
-        <h1>Products</h1>
+    </div>  
+<div id = "navlisID" class= "navlist closed"> 
+       <ul class="header-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Product</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
 
-        <div class="row">
-            <div class="product-card">
-                <img src="Images/Wet-Off Saw Timber.jpg" alt="Product 1">
-                <p class="product-description product-1">Wet-off saw timber for the pallet manufacturers.</p>
-            </div>
-
-            <div class="product-card">
-                <p class="product-description product-2">Cradles for the shipping industry using heat-treated timber.</p>
-                <img src="Images/Cradles.png" alt="Product 2">
-            </div>
-
-            <div class="product-card">
-                <img src="Images/Products 3.jpg" alt="Product 3">
-                <p class="product-description product-3">Customised wooden products according to clients' specifications.</p>
-            </div>
+    <div class="contact-info">
+    <svg width="25" height="19" viewBox="0 0 309 297" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="308.423" height="297" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_182_2" transform="matrix(0.0208333 0 0 0.0216346 0 -0.0192307)"/>
+</pattern>
+<image id="image0_182_2" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQ0lEQVR4nO2Zu4sUQRCHy/cTlANBBU18hmJiYngXGBmZ+ozFP+G48EAxFEQQY1ER7wTByEegoIZ6Ii6sLuvM9O/XM+sJPtCS5lY5ZG9mZ1x26mA/qGzZqa+7q6e6R2TEiBGV8d5vJXkKwB2SHwAQwO0kSQ6IZVR1Hclpkh2S2iPmvfeHxSJRFG0G8GiJxP8GgFequlKsQfJqUfKLJI6JJeI43g/gV78CJGfFEiQnSyQfZuBnmqZ7xQokZ8oIdOOSWAHA+woCr8UKJLMKAp/FCgC+lxUA8FasQPJLBYEpsQLJZsnkXzYajfViBZLPSiT/otPpbBNLkLzWp8DzNE3HxBokL/Qx8g/b7fYmsYj3/lBB8j9MjvwfVHUFyU85At+azeYGsQyA63mz4JybEMs45yYK6mBaLKOqq0i2cgSaqrpWLANgqmAZnRXLRFG0PRRsjsScqq4WywC4UVALk2KZLMv2hX0/753gnDsiy3kWALxLkmSnWCVN0z0FtRDiTRzHO3pciJ3sDsADkhdJ7q5FovvwouZuDsCJsDsBuAfga4/fzJM8WofAFgBRmXNCzpJz/87WUPDenx6EABdiRuqA5P1BSTjnzg1dAMAukumAJLLwf0OXIHm85NWj5tTDZamD8OABCTRqEVDVNQOqh0zqotVqbST59D8FnkiddN+2j6sKeO/PSN2E8zGAWxUEboqxi4DzS7QP2qN475o80YXGL4xswTZ7xWTyi0mS5GBoAMNHQC40cB/DMnPOjded24gRsgz5DT2ix65nYvgAAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+    +27 84 532 5147
+  </div>
+    
+  </header>
+      <div class="product-body">
+        <div class="products-container">
+          <h1>Products</h1>
+          <div class="row">
+              <div class="product-card">
+                  <img src="Images/Wet-OffSawTimber.jpg" alt="Product 1">
+                  <p class="product-description product-1">Wet-off saw timber for the pallet manufacturers.</p>
+              </div>
+      
+              <div class="product-card">
+                  <p class="product-description product-2">Cradles for the shipping industry using heat-treated timber.</p>
+                  <img src="Images/Cradles.png" alt="Product 2">
+              </div>
+      
+              <div class="product-card">
+                  <img src="Images/Products3.jpg" alt="Product 3">
+                  <p class="product-description product-3">Customised wooden products according to clients' specifications.</p>
+              </div>
+          </div>
+      
+          <button class="view-more-btn">View More</button>
         </div>
+      </div>
 
-        <button class="view-more-btn">View More</button>
-    </div>
-</body>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="/Images/FooterLogo.png" alt="">
+          </div>
+           <div class="address">
+           <p> <img src="Images/Location-icon.png" alt="Location Icon">
+            Richmond</p>
+           </div>
+        </div>
+       <hr/>
+        <div class="footer-info">
+          <div class="info-text">
+            <p>info@akilitimber.co.za <br/> +27 301 123 2426 </p>
+          </div>
+          <div class="info-link">
+            <ul class="footer-links">
+              <li><a href="index.html">Home |</a></li>
+              <li><a href="about.html">About Us |</a></li>
+              <li><a href="products.html">Products |</a></li>
+              <li><a href="contact.html">Contact Us |</a></li>
+          </ul>
+          </div>
+          <div class="trading-hours">
+            <p>Working Hours<br/>Mon-Fri : 07h30 - 16h30<br/>Sat: 07h30 - 12h00</br></p><br/>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Akili Timber - All Right Reserved. </p>
+        </div>
+      </footer>
+      <script src="./script.js"></script>
+    </body>
 
+       
 </html>
 
 
