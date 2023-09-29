@@ -81,14 +81,12 @@ main {
 
 .header-list{
   list-style-type: none;
-  margin: 10px 0 0 0;
   overflow: hidden;
   background-color: #000000;
   display: flex;
   justify-content: space-evenly;
-  
-
 }
+
 .navlist{
   display:flex;
   flex-direction: row;
@@ -105,22 +103,24 @@ li a {
   color:white;
   text-align: center;
   padding: 0;
+  margin: 4px 18px;
   width: 100%;
   text-decoration: none
 }
 
-/*li a:hover {
-  border-bottom: 3px solid #967e4c; }*/
   
 li a:hover {
-  border: 1px solid yellow; 
-  padding: 12px 14px; 
+  border: 5px solid yellow; 
+  padding: 4px 18px; 
+  margin: 0;
+  background-color: #f8d407;
+  color:#000;
 }
 
-li a.active {
+/*li a.active {
   border: 1px solid yellow; 
-  padding: 12px 14px; 
-}
+  padding: 12px 14px; }*/
+
 
 .logo 
 {
@@ -134,6 +134,7 @@ li a.active {
   flex-direction: row;
   width: 100%;
 }
+
 header{
     background-color: black;
     display: flex;
@@ -143,14 +144,13 @@ header{
   
   .contact-info {
     position: relative;
-    top: 0px;
+    top: 0;
     right: 10px;
-    padding: 12px 10px;
-    background-color: #000000;
+    padding: 1px 1px;
     color:white;
     z-index: 1;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     white-space: nowrap;
     
   }
@@ -166,6 +166,7 @@ header{
   flex-direction: row;
   position: relative;
   font-family: Archivo-Regular;
+  height: 100%;
 }
 
 .description {
@@ -174,11 +175,22 @@ header{
   color: white;
   position: relative;
   font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.description h1{
+  font-family: 'Archivo-Bold';
+    font-size: 1.5em;
 }
 
 .what-we-do-list {
-  margin: 0;
+  margin: 0 auto;
   font-size: 16px;
+  width: 60%;
 }
 
 .what-we-do-list li {
@@ -192,8 +204,9 @@ header{
   width: 100%;
 }
 
-img {
+.stock-image img {
   max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -208,23 +221,23 @@ img {
   background-color:black;
   color: white;
 }
-.Pindiwe-image {
-  width: 50%;
-}
 
+.about h2{
+  font-family: 'Archivo-Bold';
+  font-size: 2em;
+}
 
 
 /* Mission & Vision*/
 .mission-container {
   position: relative;
-
   display: flex;
   width: 100%;
 }
 
-.misssion-container img { 
+.mission-container img { 
   width: 100% !important;
-  height: auto;
+  height: 100%;
   position: relative;
   object-fit:fill;
 }
@@ -236,6 +249,7 @@ img {
   position: absolute;
   border: 2px solid #7c6e2f93; 
   border-radius: 5px; 
+  margin: auto 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   
 }
@@ -252,7 +266,7 @@ img {
   color: black;
   bottom: 0;
   left: 5%;
-  top: 55%;
+  top: 10rem;
 }
 
 .mission-box h2 {
@@ -264,7 +278,7 @@ img {
 .vision-box {
   background-color: #97663A;
   color: black;
-  top: 35%;
+  margin-top: 12%;
   right: 5%;
 }
 
@@ -280,12 +294,15 @@ img {
   font-family: Sanchez-Regular;
   
 }
+.products-container h1{
+  font-family: Archivo-Bold;
+  font-size: 3em;
+}
 
 .products-container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
-
 }
 
 .row {
@@ -297,8 +314,7 @@ img {
 .product-card {
   flex: 1;
   border: 0px solid black;
-  padding: 1px;
-  margin: .5em;
+  margin: .5em 1.5em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -314,7 +330,7 @@ transform: scale(1.05);
 
 .product-description {
   flex-grow: 1;
-  padding: 10px;
+  padding: 1.5em;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -370,7 +386,8 @@ position: absolute;
 
 }
 .contactUs-container h1 {
-  font-size: 48px;
+  font-size: 3.5em;
+  font-family: Archivo-Regular;
   margin-top: 20px;
 }
 .inquire-btn {
@@ -402,7 +419,9 @@ position: absolute;
   color: white;
   display: flex;
   flex-direction: column;
-  padding:3em .5em ;
+  justify-content: center;
+  height: 85vh;
+  padding: 3em;
 }
 
 .about button {
@@ -435,6 +454,7 @@ position: absolute;
   width: auto;
   margin: 0 0 0 auto;
   height: 100%;
+  object-fit: contain;
 }
 
 /*Footer*/
@@ -443,7 +463,6 @@ footer {
   background-color: #DFC01B;
   color: #0c0c09;
   text-align: center;
-  padding: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -453,7 +472,7 @@ footer {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  padding:.2em 0;
+  
 }
 
 footer hr {
@@ -471,14 +490,26 @@ footer hr {
 
 .footer-logo{
   position: relative;
-  width: 280px;
+  width: 18em;
   height: 55px;
 
 }
-
-.address{
-  padding: 0px;
+.footer-logo img{
+  width: 100%;
 }
+
+.address {
+  padding: 0.5em;
+}
+
+.address img{
+  width: 2.5em;
+}
+.address p {
+  margin-top: 8px;
+  margin-bottom: 0px;
+ }
+
 .separator {
   border: 1px solid #000;
   margin: 10px 0;
