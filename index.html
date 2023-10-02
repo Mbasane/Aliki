@@ -6,6 +6,7 @@
   <title>Akili Timber</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="responsive.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head> 
 <body>
@@ -70,11 +71,11 @@
       <div class="description">
         <h1>What We Do</h1>
         <ul class="what-we-do-list">
-          <li>Wet-off saw timber for the pallet manufacturers</li>
-          <li>Kiln-dried timber for door manufacturers</li>
-          <li>Cradles for the shipping industry using heat treated timber</li>
-          <li>Customized wooden products according to clients’ specifications</li>
-          <li>Shavings for poultry farmer</li>
+          <li data-aos="fade-right">Wet-off saw timber for the pallet manufacturers</li>
+          <li data-aos="fade-right">Kiln-dried timber for door manufacturers</li>
+          <li data-aos="fade-right">Cradles for the shipping industry using heat treated timber</li>
+          <li data-aos="fade-right">Customized wooden products according to clients’ specifications</li>
+          <li data-aos="fade-right">Shavings for poultry farmer</li>
         </ul>
       </div>
       <div class="stock-image">
@@ -85,12 +86,12 @@
      <!--Our Mission & Vision-->
     <div class="mission-container">
       <img src="/Images/Mission&VisionBg.png" alt="">
-        <div class="mission-box">
+        <div data-aos="fade-right" class="mission-box">
             <h2>Our Mission</h2>
             <p>To create more employment opportunities and contribute in uplifting small businesses of the Richmond rural communities.</p>
         </div>
      
-        <div class="vision-box">
+        <div class="vision-box" data-aos="fade-left">
             <h2>Our Vision</h2>
             <p>To be a highly respected sawmill in producing top quality wooden products within agreed timelines to our clients.</p>
         </div>
@@ -149,8 +150,12 @@
   </div>
 </div>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 <footer>
  

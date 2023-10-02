@@ -135,18 +135,11 @@
       top: 50%;
       padding:2em;
     }
-<<<<<<< HEAD
-    .vision-box {
-      background-color: #97663A;
-      color: black;
-      top: 20%;
-=======
     
     .vision-box {
       background-color: #97663A;
       color: black;
       top: 25%;
->>>>>>> ad5e96ea4d695da6ec699679c07970d807b941e0
       right: auto;
     }
     .row {
@@ -176,6 +169,14 @@
       flex-direction: column;
       width: 100%;
     }
+    ._container.aboutUs-container {
+      
+
+    }
+    ._container.aboutUs-container {
+      
+
+    }
     .Pindiwe-image {
       width: 100%;
       display: flex;
@@ -200,7 +201,32 @@
     .about h2,.about a {
       text-align: center;
     }
+    ._container.aboutUs-container .Pindiwe-image {
+      width: 100%;
+      display: flex;
+      padding: 2em; 
+      background-color: #000;
+      height: 100%;
+
+    }
+    ._container.aboutUs-container .Pindiwe-image img {
+      max-width: 60%;
+      width: auto;
+      margin: 1em auto 0 auto;
+      padding:3em;
+      height: 100%;
+      border-radius: 0%;
+
+    }
+    ._container.aboutUs-container .about { 
+      height: fit-content;
+      padding: 1em 0 5em 0;
+    }
+   ._container.aboutUs-container .about-description{
+        padding:.5em 2em;
+        line-height: 1.4em;
   }
+  
 
   @media only screen and (min-width: 1024px) {
   .header-list {

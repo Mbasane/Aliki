@@ -275,11 +275,7 @@ header{
   color: black;
   bottom: 0;
   left: 5%;
-<<<<<<< HEAD
-  top: 45%;
-=======
   top: 10rem;
->>>>>>> ad5e96ea4d695da6ec699679c07970d807b941e0
 }
 
 .mission-box h2 {
@@ -290,11 +286,7 @@ header{
 .vision-box {
   background-color: #97663A;
   color: black;
-<<<<<<< HEAD
-  top: 15%;
-=======
   margin-top: 12%;
->>>>>>> ad5e96ea4d695da6ec699679c07970d807b941e0
   right: 5%;
 }
 
@@ -561,3 +553,28 @@ footer hr {
 }
 
 
+/*About US */
+._container.aboutUs-container {
+  line-height: 1.4em;
+}
+._container.aboutUs-container .Pindiwe-image{
+  height: 85vh;
+  padding:.5em 2em;
+  line-height: 1.4em;
+  
+}
+._container.aboutUs-container .Pindiwe-image img{
+  max-width: 500px;
+  width: 100%;
+  padding:.5em 2em;
+  line-height: 1.4em;
+  margin: auto;
+}
+._container.aboutUs-container .about{
+  padding:.5em 2em;
+  line-height: 1.4em;
+}
+._container.aboutUs-container .about .about-description{
+  padding:.5em 2em;
+  line-height: 1.4em;
+}

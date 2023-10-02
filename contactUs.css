@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    padding:2em 0 0 0;
     
 }
 
@@ -16,6 +16,7 @@
     padding: 40px;
     background: #c0c0bf;
     box-shadow: 0 5px rgba(0, 0, 0, 0.15);
+   
 }
 
 
@@ -35,7 +36,7 @@
 }
 
 form{
-  padding: 1ema;
+  padding: 1em;
 }
 
 .formBox {
@@ -108,12 +109,19 @@ form{
     padding: 20px; 
   }
 
+  .contactUs .title {
+    margin-top:3em;
+  }
+  
   .formBox .row50 {
     flex-direction: column; 
   }
 
   .formBox .row100 .inputBox {
     width: 100%; 
+  }
+  .contact {
+    width: 60%;
   }
 }
 
