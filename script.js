@@ -8,10 +8,9 @@ function hamburger_menu() {
   }
 }
 
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", function (event) 
+{
+  event.preventDefault();
 
     // Retrieve the input field values
     var firstName = document.getElementById("firstNameInput");
@@ -22,68 +21,84 @@ document
 
     // Function to add error styles and messages to the input fields
     function setErrorStyles(field, message) {
+
+      var existingErrorMessage = field.parentNode.querySelector('.error-message');
+      
+      if(existingErrorMessage)
+      {
+        existingErrorMessage.textContent = message;
+      } else {
       field.classList.add("error");
       var errorMessage = document.createElement("div");
       errorMessage.className = "error-message";
       errorMessage.textContent = message;
       field.parentNode.appendChild(errorMessage);
     }
+  }
 
     // Function to remove error styles and messages from the input fields
-    function removeErrorStyles() {
-      var errorFields = document.querySelectorAll(".error");
-      errorFields.forEach(function (field) {
+    function removeErrorStyles(field) {
         field.classList.remove("error");
-      });
+        var existingErrorMessage = field.parentNode.querySelector('.error-message');
+        if (existingErrorMessage) 
+        {
+          existingErrorMessage.parentNode.removeChild(existingErrorMessage);
+        }
+      }
 
-      var errorMessages = document.querySelectorAll(".error-message");
-      errorMessages.forEach(function (message) {
-        message.parentNode.removeChild(message);
-      });
-    }
     // Check if the first name is empty
     if (firstName.value.trim() === "") {
       setErrorStyles(firstName, "Please enter your first name");
-      return;
+    } else {
+      removeErrorStyles(firstName);
     }
+
     // Validation for first name
     var firstNameCheck = /^[A-Za-z]+$/;
     if (!firstNameCheck.test(firstName.value)) {
       setErrorStyles(
         firstName,
-        "First name must contain only alphabetic characters."
-      );
-      return;
+        "First name must contain only alphabetic characters.");
+      } else {
+        removeErrorStyles(firstName);
     }
 
     // Check if the last name is empty
     if (lastName.value.trim() === "") {
       setErrorStyles(lastName, "Please enter your last name");
-      return;
+    } else {
+      removeErrorStyles(lastName);
     }
-
+    
     // Validation for last name
     var lastNameCheck = /^[A-Za-z]+$/;
     if (!lastNameCheck.test(lastName.value)) {
-      setErrorStyles(
-        lastName,
-        "Last name must contain only alphabetic characters."
-      );
-      return;
-    }
+      setErrorStyles(lastName, "Last name must contain only alphabetic characters.");
+      } else {
+        removeErrorStyles(lastName);
+      }
 
     // Validation for email format
     var emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailCheck.test(email.value)) {
       setErrorStyles(email, "Please enter a valid email address.");
-      return;
-    }
+      } else {
+        removeErrorStyles(email);
+      }
 
     // Validation for contact number
     var contactNumberCheck = /^\d+$/;
     if (!contactNumberCheck.test(contactNumber.value)) {
       setErrorStyles(contactNumber, "Contact number must contain only numbers");
-      return;
+    } else {
+      removeErrorStyles(contactNumber);
+    }
+    
+    // Check if the request field is empty
+    if (request.value.trim() === '') {
+      setErrorStyles(request, 'Please describe your request');
+    } else {
+      removeErrorStyles(request);
     }
 
     console.log("Form data:");
