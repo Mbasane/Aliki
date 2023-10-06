@@ -6,6 +6,7 @@
   <title>Akili Timber</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="responsive.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head> 
 <body>
@@ -61,10 +62,10 @@
 
 <body>
   <div class="aboutUs-container _container">
-    <div class="Pindiwe-image">
+    <div class="Pindiwe-image" data-aos="fade-right">
       <img src="Images/Pindiwe.PNG" alt="Pindiwe Image">
     </div>
-    <div class="about">
+    <div class="about" data-aos="fade-left">
       <h2>About Akili Timber</h2>
       <p class="about-description">Akili Timber is a sawmill based in Richmond, in the heart of KZN Midlands situated on 1.7592 hectares of land. We have the best location and have been known for saw-milling for over 13 years. We have skilled personnel in saw-milling who are community residents. Currently, we support over 10 local timber suppliers. 
         Our Company is 100% owned and managed by
@@ -87,6 +88,10 @@
       </div>
    
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
    <script src="script.js"></script>
 </body>
 <footer>
