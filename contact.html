@@ -68,33 +68,33 @@
         <!--Form-->
         <div class="contact form">
           <h3>Send Request</h3>
-            <form id="contactForm" action="/">
+            <form id="contactForm" action="sendingform.php" method="post">
                 <div class="formBox">
                     <div class="row50">
                         <div class="inputBox">
                             <span> First Name</span>
-                            <input type="text" id="firstNameInput">
+                            <input type="text" name="firstName" id="firstNameInput">
                         </div>
                         <div class="inputBox">
                           <span> Last Name</span>
-                            <input type="text" id="lastNameInput">
+                            <input type="text" name="lastName" id="lastNameInput">
                         </div>
                     </div>
                     <div class="row50">
                         <div class="inputBox">
                           <span>Email</span>
-                          <input type="email" id="emailInput">
+                          <input type="email" name="emailAddress" id="emailInput">
                         </div>
                         <div class="inputBox">
                             <span>Contact Number</span>
-                            <input type="tel" id="contactNumberInput">
+                            <input type="tel" name="contactNumber" id="contactNumberInput">
                         </div>
                     </div>
                 </div>
                 <div class="row100">
                     <div class="inputBox">
                         <span>Describe Your Request</span>
-                        <textarea id="requestInput"></textarea>
+                        <textarea minlength="10" name="description" id="requestInput"></textarea>
                     </div>
                 </div>
                 <div class="row100">
