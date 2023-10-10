@@ -142,7 +142,13 @@
       top: 25%;
       right: auto;
     }
-    .row {
+
+    .products-container h1 {
+      font-family: Archivo-Bold;
+      font-size: 2.3em;
+      padding:1em;
+    }
+    .products-container .row{
       display: flex;
       justify-content: center;
       flex-direction:column;
@@ -169,14 +175,7 @@
       flex-direction: column;
       width: 100%;
     }
-    ._container.aboutUs-container {
-      
 
-    }
-    ._container.aboutUs-container {
-      
-
-    }
     .Pindiwe-image {
       width: 100%;
       display: flex;
@@ -237,3 +236,5 @@
     padding:.5em 2em;
   }
   }
+
+}

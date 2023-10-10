@@ -187,11 +187,11 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  font-family: Sanchez-Regular;
 }
 
 .description h1{
-  font-family: 'Archivo-Bold';
+  font-family: Archivo-Bold;
     font-size: 1.5em;
 }
 
@@ -228,11 +228,12 @@ header{
   width: 50%;
   background-color:black;
   color: white;
+  font-family: Sanchez-Regular;
 }
 
-.about h2{
-  font-family: 'Archivo-Bold';
-  font-size: 2em;
+.about h1{
+  font-family: Archivo-Bold;
+  font-size: 2.1em;
 }
 
 
@@ -242,6 +243,18 @@ header{
   display: flex;
   width: 100%;
   height: 100vh;
+}
+
+.mission-box h2 {
+  font-family: Archivo-Bold;
+    font-size: 1.5em;   
+    font-weight: 500;             
+}
+
+.vision-box h2{
+  font-family: Archivo-Bold;
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .mission-container img { 
@@ -260,7 +273,8 @@ header{
   border-radius: 5px; 
   margin: auto 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  
+  font-family: Sanchez-Regular;
+
 }
 
 .mission-box:hover,
@@ -298,21 +312,21 @@ header{
 /* Our Products*/
 .product-body{
   background-color: #885f36;
-  padding: 20px;
   font-family: Sanchez-Regular;
   
 }
 .products-container h1{
   font-family: Archivo-Bold;
-  font-size: 3em;
+  font-size: 2.3em;
 
 }
+
 
 .products-container {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-
+  padding: 10px;
 }
 
 .products-container .row {
@@ -396,6 +410,11 @@ transform: scale(1.05);
   font-family: Sanchez-Regular;
 }
 
+.view-more-btn a{
+  text-decoration: none;
+  color: black;
+}
+
 /*Contanct Us*/
 .contact-body{
   background-image: url('/Images/Contact_bg.jpg'); 
@@ -419,8 +438,8 @@ position: absolute;
 
 }
 .contactUs-container h1 {
-  font-size: 3.5em;
-  font-family: Archivo-Regular;
+  font-size: 2.3em;
+  font-family: Archivo-Bold;
   margin-top: 20px;
 }
 .inquire-btn {
@@ -434,10 +453,12 @@ position: absolute;
 .inquire-btn a {
   text-decoration: none;
   color: white;
+  font-family: Sanchez-Regular;
 }
 .inquire-text {
   font-size: 18px;
   margin-top: 40px;
+  font-family: Sanchez-Regular;
 }
 /* About us*/
 ._container {
@@ -461,12 +482,20 @@ position: absolute;
   padding: 1em;
   margin:0 .5em;
   background-color: #DFC01B;
-  border: 1px solid #f8d407;
+  border: none;
   width: fit-content;
+  text-decoration: none;
+  color: black;
+  font-family: Sanchez-Regular;
+  font-size: 16px;
 }
+
 .about h2 {
   margin:0 .5em; 
-}
+  font-size: 2em;
+  font-family: Archivo-Bold;
+  }
+
 
 .about-description {
   font-size: 18px;
@@ -498,6 +527,8 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-family: Sanchez-Regular;
+  font-size: 1em;
 }
 .footer-content {
   display: flex;
@@ -566,6 +597,7 @@ footer hr {
   padding: 1em .2em;
   color: black !important;
   width: 100%;
+  font-family: Archivo-Bold;
 
 }
 
