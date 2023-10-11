@@ -246,6 +246,8 @@ header{
 }
 .vision_mission_cards {
   position: absolute;
+  left:0;
+  right:0;
 }
 .mission-box h2 {
   font-family: Archivo-Bold;
