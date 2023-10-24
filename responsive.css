@@ -1,6 +1,9 @@
 /* Mobile Phone */
-@media only screen and (max-width: 468px) {
-    .navlist ul {
+@media only screen and (max-width: 768px) {
+  main {
+    height: 80vh; 
+  }
+  .navlist ul {
       flex-direction: column;
       align-items: center;
     }
@@ -9,7 +12,7 @@
       margin: 0; 
     }
     .navlist {
-      position: absolute;
+      position: fixed;
       top: 0;
       margin-top: 3.4em;
       left: 0;
@@ -21,7 +24,9 @@
       background: #000000;
       font-family: Arial, sans-serif;
       font-weight: bold;
-      transition: left 0.3s ease-in;
+      transition: all .5s ease-in;
+      z-index:10;
+     
     }
   
     li a:hover {
@@ -33,23 +38,26 @@
       display: none;
     }
    .navlist.closed{
-      left: -100%;
-      top: -50%;
-     transition: left 0.3s ease-in;
+      left: -150%;
+     transition: all .4s ease-in;
       
     }
   
   #hamburger {
     display: block;
     margin-top: 0px; 
-    padding-left: 225px;
+    padding-left: auto;
     cursor: pointer;
+    padding:1.5em 1em;
   }
   
   header{
     background-color: black;
     display: flex;
-    height: 150;
+    justify-content: space-between;
+    position: fixed;
+    width:100% ;
+    z-index: 10;
   }
   
   li {
@@ -65,7 +73,168 @@
       flex-direction: column;
       align-items: center;
     }
+    .content {
+      text-align: center;
+      color: white;
+      height: fit-content;
+      margin: 1.5em;
+      padding:1em;
+      width: 70%;
+      border-left:  3px solid #f8d407;
+    }
+    
+    .content h1{
+      font-family: Archivo-Black;
+      font-size: 2.5em;
+    }
+    
+    .content h2{
+      font-family: Archivo-Regular;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1.9em;
+    }
+    .container {
+      position: relative;;
+    }
+    .description {
+      width: 100%;
+      background-color:rgba(0, 0, 0, 0.785);
+      color: white;
+      position: relative;
+      z-index: 1;
+      padding: 2em;
+      backdrop-filter: blur(2px);
+    }
+    
+    .stock-image {
+      z-index: 0;
+      position:absolute;
+      width: 100%;
+    }
     li {
       float: none;
+    }
+    .mission-container {
+      align-items: center;
+      justify-content: center;
+     
+    }
+   
+    .missionvisionitem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .mission-box {
+      background-color: #DFC01B;
+      color: black;
+      left: auto;
+      right:auto;
+      top: 50%;
+      padding:2em;
+    }
+    
+    .vision-box {
+      background-color: #97663A;
+      color: black;
+      top: 25%;
+      right: auto;
+    }
+
+    .products-container h1 {
+      font-family: Archivo-Bold;
+      font-size: 2.3em;
+      padding:1em;
+    }
+    .products-container .row{
+      display: flex;
+      justify-content: center;
+      flex-direction:column;
+      padding:.5em;
+    }
+    .row .product-card {
+      margin:1em auto;
+      max-width: 450px;
+    }
+    .info-link {
+      width: 100%;
+    }
+    .footer-info {
+      font-size: .9em;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content:stretch;
+      align-items: stretch;
+    }
+    ._container {
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .Pindiwe-image {
+      width: 100%;
+      display: flex;
+      padding: .5em; 
+      background-color: #000;
+      
+    }
+    .Pindiwe-image img {
+      max-width: 50%;
+      width: auto;
+      margin: auto;
+      padding:3em;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .about {
+     justify-content: center;
+     padding: 6em 0;
+     height: fit-content;
+     text-align: center;
+    }
+    .about h2,.about a {
+      text-align: center;
+    }
+    ._container.aboutUs-container .Pindiwe-image {
+      width: 100%;
+      display: flex;
+      padding: 2em; 
+      background-color: #000;
+      height: 100%;
+
+    }
+    ._container.aboutUs-container .Pindiwe-image img {
+      max-width: 60%;
+      width: auto;
+      margin: 1em auto 0 auto;
+      padding:3em;
+      height: 100%;
+      border-radius: 0%;
+
+    }
+    ._container.aboutUs-container .about { 
+      height: fit-content;
+      padding: 1em 0 5em 0;
+    }
+   ._container.aboutUs-container .about-description{
+        padding:.5em 2em;
+        line-height: 1.4em;
+  }
+  
+
+  @media only screen and (min-width: 1024px) {
+  .header-list {
+    justify-content: center;
+    }
+
+  .header-list li {
+    padding:.5em 2em;
   }
   }
+
+}
